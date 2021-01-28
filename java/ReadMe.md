@@ -1,3 +1,5 @@
+        java 8 new apis 
+
 
         Core Java
 
@@ -141,3 +143,53 @@
         5.spring and hibernate integration 
 
         6.project on spring with hibernate
+        
+        BiConsumer
+        BiFunction
+        BinaryOperator
+        BiPredicate
+        BooleanSupplier
+        Consumer
+        DoubleBinaryOperator
+        DoubleConsumer
+        DoubleFunction
+        DoublePredicate
+        DoubleSupplier
+        DoubleToIntFunction
+        DoubleToLongFunction
+        DoubleUnaryOperator
+        Function
+        IntBinaryOperator
+        IntConsumer
+        IntFunction
+        IntPredicate
+        IntSupplier
+        IntToDoubleFunction
+        IntToLongFunction
+        IntUnaryOperator
+        LongBinaryOperator
+        LongConsumer
+        LongFunction
+        LongPredicate
+        LongSupplier
+        LongToDoubleFunction
+        LongToIntFunction
+        LongUnaryOperator
+        ObjDoubleConsumer
+        ObjIntConsumer
+        ObjLongConsumer
+        Predicate
+        Supplier
+        ToDoubleBiFunction
+        ToDoubleFunction
+        ToIntBiFunction
+        ToIntFunction
+        ToLongBiFunction
+        ToLongFunction
+        UnaryOperator
+        https://www.tutorialspoint.com/java8/java8_streams.htm
+        https://howtodoinjava.com/java8/java-streams-by-examples/
+        https://stackify.com/streams-guide-java-8/
+        https://www.geeksforgeeks.org/stream-generate-method-java/
+        https://www.geeksforgeeks.org/stream-ofnullablet-method-in-java-with-examples/
+
