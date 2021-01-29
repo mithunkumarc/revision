@@ -59,6 +59,33 @@ java 9 Modules Introduction
         It provides library level safety.
         Run-time security check takes place when we load new code.
 
+#### classloaders : 
+
+        Java ClassLoader is an abstract class. It belongs to a java.lang package. 
+        It loads classes from different resources. 
+        Java ClassLoader is used to load the classes at run time. 
+        In other words, JVM performs the linking process at runtime. 
+        Classes are loaded into the JVM according to need
+        
+#### ClassLoader is based on three principles: Delegation, Visibility, and Uniqueness.
+
+        Delegation principle: It forwards the request for class loading to parent class loader. 
+        It only loads the class if the parent does not find or load the class.
+        Visibility principle: It allows child class loader to see all the classes loaded by parent ClassLoader. 
+        But the parent class loader cannot see classes loaded by the child class loader.
+        Uniqueness principle: It allows to load a class once. It is achieved by delegation principle. 
+        It ensures that child ClassLoader doesn't reload the class, which is already loaded by the parent.
+        
+#### Types of classloaders :    
+        
+        Bootstrap Class Loader: It loads standard JDK class files from rt.jar and other core classes. 
+        Extensions Class Loader: It delegates class loading request to its parent. 
+        If the loading of a class is unsuccessful, it loads classes from jre/lib/ext directory or any other 
+        directory as java.ext.dirs. classes in JAR files in lib/ext directory of JRE, and in the system-wide, 
+        platform-specific extension directory (/usr/jdk/packages/lib/ext)
+        System Class Loader: It loads application specific classes from the CLASSPATH environment variable.
+
+
         Installation jdk and eclipse
         Hello world program : Creating java class and executing in command prompt
         data types
