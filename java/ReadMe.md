@@ -189,7 +189,17 @@ java 9 Modules Introduction
         import static java.lang.Math.*; 
         inside main method : System.out.println(sqrt(4)); 
 
-     
+#### class found in multiple packages
+
+        eg : Date found in util and sql
+        When the class is found in multiple packages, Java gives you the compiler error:
+                import java.util.*;
+                import java.sql.*; // DOES NOT COMPILE
+        The type Date is ambiguous
+        solution : 
+                import java.util.Date;
+                import java.sql.*;
+
         packages and declaring package
         access specifiers
         Rules for source files
