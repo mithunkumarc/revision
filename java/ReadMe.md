@@ -200,6 +200,10 @@ java 9 Modules Introduction
                 import java.util.Date;
                 import java.sql.*;
 
+        if you want to use both : 
+                java.util.Date date;
+                java.sql.Date sqlDate;
+                
         packages and declaring package
         access specifiers
         Rules for source files
