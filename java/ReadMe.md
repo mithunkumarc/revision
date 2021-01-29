@@ -133,8 +133,41 @@ java 9 Modules Introduction
         _ cannot be used as var name (check latest java version)
 
 
-        class and object
-        Behavior depends on state
+#### class
+
+        blueprint of an object, 
+        defines what object can have as state and how it should behave as methods
+        public and default access modifiers only allowed
+        protected and private not allowed.
+        static applied to inner class
+        final can be applied to call to stop inheritance
+        static variables are also called class variables
+        static methods are also called class methods
+
+#### object
+
+        An object is a runtime instance of a class in memory.
+        has state and behaviour
+        object can be made up of group of objects
+        object can be state of another object. so access modifiers can be applied.
+        staic final can also be applied on variable pointing to object
+        
+#### instance methods
+        
+        methods behaviour/return value depends on state
+        or methods operate on state and can change state value
+        eg: horn() of class Car
+
+#### instance variables
+
+        state of object
+        eg : name of person class
+        
+#### local variable, instance variable, static variable
+
+#### how to create (global)constants 
+
+
         Association : one to one, one to many, many to many
         Association : composition and aggregation
         return statement, break and continue statement
