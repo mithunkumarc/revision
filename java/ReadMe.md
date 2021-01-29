@@ -143,7 +143,10 @@ java 9 Modules Introduction
         final can be applied to call to stop inheritance
         static variables are also called class variables
         static methods are also called class methods
-
+        each file can have any number of class but only one public class
+        //check: public to class file same as filename? main method?
+        
+        
 #### object
 
         An object is a runtime instance of a class in memory.
