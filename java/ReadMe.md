@@ -283,4 +283,8 @@ java 9 Modules Introduction
         https://stackify.com/streams-guide-java-8/
         https://www.geeksforgeeks.org/stream-generate-method-java/
         https://www.geeksforgeeks.org/stream-ofnullablet-method-in-java-with-examples/
+        
+#### read 
+
+        https://github.com/wesleyegberto/java-new-features
 
