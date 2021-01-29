@@ -174,7 +174,24 @@ java 9 Modules Introduction
         Association : one to one, one to many, many to many
         Association : composition and aggregation
         return statement, break and continue statement
-        package and import statement
+
+#### import statement
+     
+        any number of import statement allowed
+        import all classes : import java.util.*;
+        specific import : import java.util.ArrayList;
+        speicific import recommended. import what u need.
+
+#### static import : 
+
+        we can access the static members of a class directly without class name or any object
+        eg : 
+        import static java.lang.Math.*; 
+        inside main method : System.out.println(sqrt(4)); 
+
+     
+        packages and declaring package
+        access specifiers
         Rules for source files
         Object Oriented Language Brief
         sending parameter values to method,[ var...args ]
