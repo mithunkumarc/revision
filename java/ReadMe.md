@@ -85,8 +85,18 @@ java 9 Modules Introduction
         platform-specific extension directory (/usr/jdk/packages/lib/ext)
         System Class Loader: It loads application specific classes from the CLASSPATH environment variable.
 
+#### main method
 
-        Installation jdk and eclipse
+        syntax, access specifieres, overrided/overloaded?
+        why manin method is static
+
+#### how System.out.println() works
+
+#### singlenton implementation
+
+#### final finally finalize(java 11)
+
+
         Hello world program : Creating java class and executing in command prompt
         data types
         Control statements
