@@ -98,10 +98,41 @@ java 9 Modules Introduction
 
 
         Hello world program : Creating java class and executing in command prompt
-        data types
-        Control statements
-        arrays and  Looping statements
-        Identifiers
+
+#### data types
+        
+        char byte short int long float double boolean : primitive
+        string array arraylist : builtin
+        Person class: user defined
+                
+        
+#### arrays
+        
+        fixed size, fixed type, reading fast, deleting elements create holes
+        int[] a = new int[10];
+        int[] b = {};
+        
+### varargs : varname...datatype
+
+        public static void main(args...String) {
+                //args  : multiple arguments can be received
+        }
+        
+
+#### Looping statements and Control statements
+
+        if, if else, else if
+        enhanced for loop
+        switch : supports char int string, (check latest java version)
+        
+#### Identifiers : names of variable/fields/methods/class/interface names
+        
+        _ and $ only special sympbols allowed
+        digits not allowed in the beginning
+        any length
+        _ cannot be used as var name (check latest java version)
+
+
         class and object
         Behavior depends on state
         Association : one to one, one to many, many to many
