@@ -13,7 +13,52 @@ java 9 Modules Introduction
                 func is imp : data is imp
                 no polymor overloading/rriding : exist
                 
-        Features
+#### Features
+
+        Simple
+        Object Oriented
+        Platform Independent : code written for JVM : JVM  platform dependent
+        Secure : enables to develop virus-free, tamper-free systems. 
+        Architecture-neutral
+                compiler generates an architecture-neutral object file format, which makes 
+                the compiled code executable on many processors, 
+                with the presence of Java runtime system.
+        Portable
+                Being architecture-neutral and having no implementation dependent aspects 
+                of the specification makes Java portable. 
+        Robust
+                Java makes an effort to eliminate error-prone situations by emphasizing 
+                mainly on compile time error checking and runtime checking.
+
+        Multithreaded
+                With Java's multithreaded feature it is possible to write programs 
+                that can perform many tasks simultaneously. 
+
+        Interpreted
+                Java byte code is translated on the fly to native machine 
+                instructions and is not stored anywhere. 
+
+        High Performance
+                With the use of Just-In-Time compilers, 
+                Java enables high performance.
+        Distributed
+                Java is designed for the distributed environment of 
+                the internet.
+
+        Dynamic
+                Java programs can carry an extensive amount of 
+                run-time information that can be used to verify and 
+                resolve accesses to objects at run-time.
+
+#### java secure: 
+
+        programs run inside a virtual machine called sandbox.
+        explicit pointer : point to address location
+        Byte-code verifier checks the code fragments for illegal code that can violate access right to object.
+        It provides java.security package implements explicit security.
+        It provides library level safety.
+        Run-time security check takes place when we load new code.
+
         Installation jdk and eclipse
         Hello world program : Creating java class and executing in command prompt
         data types
