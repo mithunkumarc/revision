@@ -6,7 +6,13 @@ java 9 Modules Introduction
 
         Core Java
 
-        Procedure Oriented Language vs Object Oriented Language
+####  Procedure Oriented Language vs Object Oriented Language
+
+                prog divided to function : objects
+                no access specifiers encapsulation : exist
+                func is imp : data is imp
+                no polymor overloading/rriding : exist
+                
         Features
         Installation jdk and eclipse
         Hello world program : Creating java class and executing in command prompt
