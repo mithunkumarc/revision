@@ -104,6 +104,9 @@ java 9 Modules Introduction
         char(16 bit unicode value /uxxx) byte(8 bit) short(16) int(32 bit) long(64) 
         float(32) double(74) boolean(true/false) : primitive
         
+        float requires suffix f at the end, double d, long l
+        big numbers can be more readable using _ between them, eg : 1_212_330
+        
         string array arraylist : builtin : already defined in java
         
         Person class: user defined
