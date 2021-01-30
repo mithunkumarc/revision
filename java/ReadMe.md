@@ -101,8 +101,11 @@ java 9 Modules Introduction
 
 #### data types
         
-        char byte short int long float double boolean : primitive
-        string array arraylist : builtin
+        char(16 bit unicode value /uxxx) byte(8 bit) short(16) int(32 bit) long(64) 
+        float(32) double(74) boolean(true/false) : primitive
+        
+        string array arraylist : builtin : already defined in java
+        
         Person class: user defined
                 
         
