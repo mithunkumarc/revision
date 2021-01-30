@@ -247,7 +247,25 @@ java 9 Modules Introduction
 
         one constructor can call another constructor in the same class using this keyword
         child class constructor can call parent class constructor using super keyword
+
+#### instance initializer blocks
+
+        outside method (and inside class) also called instance initializer blocks
+                class Person{
+                        {
+                                // this block merged with constructor, and called when instance created
+                                int coupons = 5;
+                        }
+                }
         
+        inside method 
+                initializer blocks can also exist inside method, executed when enclosing method called
+                public void run(){                        
+                        { 
+                                System.out.println("executed when method is called");
+                        }
+                }
+         
 
         Default
         Overloaded
