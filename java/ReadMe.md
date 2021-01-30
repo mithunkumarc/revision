@@ -212,7 +212,33 @@ java 9 Modules Introduction
         inheritance and encapsulation
         overloading methods
         abstract classes
-        Constructor
+
+#### Constructor
+        
+        member of class
+        name of constructor must be same as class name
+        fired when object(new operator) is created
+        constructor can have empty return statement.(no return value)
+        purpose: initialize instance variable at the time of object being created
+        constructor implicity returns object which has been created(memory allocated pointer/address)
+        allocated memory for object
+        can be declared as public, protected, private and default
+        multiple constructors are allowed        
+        constructors can be overloaded(constructors with differenct number of params or order) 
+        constructors cannot be overrided as they dont inherit to subclass
+        static final cannot be applied to constructors
+
+#### Default constructor
+
+        if we dont provide any constructor, default constructor is provided
+        default constructor assign default value to instance varialbles
+
+#### constructor chaining : reuse for initialization of instance varialbles
+
+        one constructor can call another constructor in the same class using this keyword
+        child class constructor can call parent class constructor using super keyword
+        
+
         Default
         Overloaded
         chaining
