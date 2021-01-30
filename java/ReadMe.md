@@ -182,6 +182,19 @@ java 9 Modules Introduction
         4. directly instialize inside class.
         
 
+#### primitiv type variables storage
+
+        values in the memory where the variable is allocated
+
+#### reference type variable storage 
+
+        “points” to an object by storing the memory address where the object is located, 
+        a concept referred to as a pointer.
+        A reference can be assigned to another object of the same type.
+                Dog d2 = d1; (Dog d1;)
+        A reference can be assigned to a new object using the new keyword of the same type.
+                Dog d = new Dog();
+
 #### local variable, instance variable, static variable
 
 #### how to create (global)constants 
