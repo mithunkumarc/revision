@@ -165,12 +165,16 @@ java 9 Modules Introduction
 
         state of object
         eg : name of person class
+        instance variables can be final
+        instance variables can point to object(you can say static object)
         
-#### three ways to initialize instance variables
+#### Ways to initialize instance variables
 
         1. constructors
         2. setter methods
         3. using reference variable(depends on access specifier)
+        4. directly instialize inside class.
+        
 
 #### local variable, instance variable, static variable
 
