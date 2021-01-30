@@ -166,6 +166,12 @@ java 9 Modules Introduction
         state of object
         eg : name of person class
         
+#### three ways to initialize instance variables
+
+        1. constructors
+        2. setter methods
+        3. using reference variable(depends on access specifier)
+
 #### local variable, instance variable, static variable
 
 #### how to create (global)constants 
