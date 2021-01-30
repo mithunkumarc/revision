@@ -257,6 +257,7 @@ java 9 Modules Introduction
                                 int coupons = 5;
                         }
                 }
+        order of execution : initializer block first and then constructor code
         
         inside method 
                 initializer blocks can also exist inside method, executed when enclosing method called
@@ -265,12 +266,16 @@ java 9 Modules Introduction
                                 System.out.println("executed when method is called");
                         }
                 }
+                order of execution : normal as code order
+                
          
 
         Default
         Overloaded
         chaining
         Access modifiers
+        
+        
         Polymorphism
         Property hiding
         overriding
