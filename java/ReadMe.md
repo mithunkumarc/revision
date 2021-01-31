@@ -336,10 +336,7 @@ java 9 Modules Introduction
         print() and main()
         Interfaces, sam, marker, tagged interface
         Default,static,private methods
-        reflection
-        string class, immutable, equals vs ==
-        String buffer and String builder
-        String format function
+        reflection        
         object class and its methods
         pass by reference pass by value : ex1 : primitive, ex2 : object : swap
         Wrapper classes
