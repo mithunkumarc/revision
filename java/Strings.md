@@ -48,8 +48,33 @@
 
 
 
-class, immutable, equals vs ==
-String buffer and String builder
+#### equals vs ==
+
+        equals : compares content
+        == used between any two reference variables, true if both pointing to same object else false;
+
+#### compare string
+
+        String s1 = "hello";
+        String s2 = "hello";
+        s1 == s2; //true , s1 and s2 both pointing to same copy in string pool
+        
+        String s1 = new String("hello");
+        String s2 = new String("hello");
+        s1 == s2; //false, s1 and s2 pointing to different copy in heap
+
+#### Mutable Strings : String buffer and String builder
+
+        // code same for StringBuffer
+        StringBuilder sb = new StringBuilder("start");
+        sb.append("+middle"); // sb = "start+middle"
+        StringBuilder same = sb.append("+end"); // "start+middle+end"
+
+        * NOte :  StringBuffer does the same thing but more slowly because it is thread safe.
+        * Thread safe : methods are syncronized
+
+
+
 String format function
 immutable class
 blank final variable
