@@ -1,4 +1,8 @@
-string class, immutable, equals vs ==
+#### Strings : 
+
+        sequence of characters
+
+class, immutable, equals vs ==
 String buffer and String builder
 String format function
 
