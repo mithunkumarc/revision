@@ -171,12 +171,24 @@ java 9 Modules Introduction
         or methods operate on state and can change state value
         eg: horn() of class Car
 
+#### Types of variables 
+
+        local variable: must be initialized, scope is enclosing block
+        instance variable: depends on access modifiers
+        reference variable: can be used as both local/instance variable
+        static variable/class variable: whereever the enclosing class is accessible
+
 #### instance variables
 
         state of object
         eg : name of person class
         instance variables can be final
         instance variables can point to object(you can say static object)
+        defualt values of instance varialbe depends on datatype
+                int,short,byte,log is zero
+                float double 0.0
+                boolean false
+                String null(or any reference variable not initialized)
         
 #### Ways to initialize instance variables
 
@@ -199,7 +211,7 @@ java 9 Modules Introduction
         A reference can be assigned to a new object using the new keyword of the same type.
                 Dog d = new Dog();
 
-#### local variable, instance variable, static variable
+
 
 #### how to create (global)constants 
 
