@@ -131,6 +131,12 @@ java 9 Modules Introduction
         enhanced for loop
         switch : supports char int string, (check latest java version)
         
+#### Continue vs Break vs return
+        
+        continue : stop current iteration and switch to next interation, used within loop
+        break : come out of loop or switch case, used within loop and switch statement
+        return : stop method execution return with value, used within method
+        
 #### Identifiers : names of variable/fields/methods/class/interface names
         
         _ and $ only special sympbols allowed
