@@ -18,6 +18,34 @@
         fiels/instance variables private
         no setter method, allow constructor initailization at the time of creating object
         
+#### string pool : 
+
+        Java realizes that many strings repeat in the program and solves this issue by reusing common ones. 
+        The string pool, also known as the intern pool, is a location in the Java virtual machine (JVM)
+        that collects all these strings.
+
+        The string pool contains literal values that appear in your program 
+        When you use 
+                String s = "Hello"; 
+                String s2= "Hello";
+                you get the same copy for both s and s2. 
+
+        However, when you do 
+                String s = new String("Hello"); 
+                String s2 = new String("Hello") 
+                you have different copies for s and s2 in the heap.
+
+#### why strings are immutable 
+
+        strings are reused in same application, 
+        if strings are mutable, changing at one place will affect other places too.
+
+#### strings can be read character by character using index, 0 based index
+
+#### methods
+
+#### new methods in java 9/11/new versions
+
 
 
 class, immutable, equals vs ==
@@ -27,5 +55,4 @@ immutable class
 blank final variable
 
 
-string pool vs heap
 
