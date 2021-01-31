@@ -42,9 +42,6 @@
 
 #### strings can be read character by character using index, 0 based index
 
-#### methods
-
-#### new methods in java 9/11/new versions
 
 
 
@@ -74,10 +71,24 @@
         * Thread safe : methods are syncronized
 
 
+#### methods
+        
+        tobe updated
 
-String format function
-immutable class
-blank final variable
+#### new methods in java 9/11/new versions
 
+        tobe updated
+
+#### String format function
+
+        tobe updated
+
+#### How to implement immutable class
+
+        tobe updated
+
+#### blank final variable
+
+        tobe updated
 
 
