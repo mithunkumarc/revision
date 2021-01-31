@@ -137,6 +137,10 @@ java 9 Modules Introduction
         digits not allowed in the beginning
         any length
         _ cannot be used as var name (check latest java version)
+        
+        The name must begin with a letter or the symbol $ or _
+        Subsequent characters may also be numbers
+        Reserved keywords are not allowed to use as identifiers
 
 
 #### class
