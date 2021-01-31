@@ -177,6 +177,7 @@ java 9 Modules Introduction
         instance variable: depends on access modifiers
         reference variable: can be used as both local/instance variable
         static variable/class variable: whereever the enclosing class is accessible
+        * static variables shared accorss multiple objects(of same class)
 
 #### instance variables
 
