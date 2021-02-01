@@ -56,7 +56,7 @@ class.
 
 
             Interface Flyable {
-              fly
+              fly();
             }
 
             
@@ -64,6 +64,12 @@ class.
             class bird implements Flyable
             class Insect implements Flyable
             
-            Flayble f1 = new Helicopter();
-            Flayble f2 = new Bird();
-            Flayble f3 = new Insect();
+            Flyable f1 = new Helicopter();
+            Flyable f2 = new Bird();
+            Flyable f3 = new Insect();
+            
+            // inside someclass
+                public void makeFly(Flyable f){
+                    // f can be Helicoptor or bird or Insect
+                    f.fly();
+                }
