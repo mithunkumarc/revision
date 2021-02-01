@@ -37,3 +37,7 @@
             public static void main(String[] args) {
                Panda.eat();
            }
+           
+#### static final mehtod
+        
+        tobe updated
