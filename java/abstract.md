@@ -42,12 +42,12 @@ class.
     Abstract class : if we need instance with both state and behaviour
     Interface : if we need only behaviour but no state (only feature to be added)
     
-| Tables        | Abstact classes           | Interfaces  |
-| ------------- |:-------------------:| -----------------:|
-| col 3 is      | instance variables/state | no instance variables, only constants |
-| col 2 is      | abstract methods, implemented methods | abstract methods, default methods   |
-| zebra stripes | multiple inheritance not allowed      | supports multiple inheritance    |
-| zebra stripes | class extends abstract classes      | class implements inheritance    |
+ | Abstact classes     | Interfaces        |
+ |:-------------------:| -----------------:|
+ | instance variables/state | no instance variables, only constants |
+ | abstract methods, implemented methods | abstract methods, default methods   |
+ | multiple inheritance not allowed      | supports multiple inheritance    |
+ | class extends abstract classes      | class implements inheritance    |
 
 
 * Interface is also type, so its reference var can point to instance of implementing class
