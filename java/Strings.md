@@ -72,8 +72,99 @@
 
 
 #### methods
+        charAt()
+        int compareTo​(String anotherString) : Compares two strings lexicographically.
+                
+        String	concat​(String str) : Concatenates the specified string to the end of this string.
         
-        tobe updated
+        boolean	contains​(CharSequence s) : 
+        Returns true if and only if this string contains the specified sequence of char values.
+        
+        boolean	contentEquals​(CharSequence cs)	: Compares this string to the specified CharSequence.
+        boolean	contentEquals​(StringBuffer sb)	: Compares this string to the specified StringBuffer.
+        boolean	endsWith​(String suffix) : Tests if this string ends with the specified suffix.
+        boolean	equals​(Object anObject) : Compares this string to the specified object.
+        
+        boolean	equalsIgnoreCase​(String anotherString) : 
+        Compares this String to another String, ignoring case considerations.
+        
+        static String	format​(String format, Object... args)	: 
+        Returns a formatted string using the specified format string and arguments.
+        
+        int	hashCode()	: Returns a hash code for this string.
+        
+        int	indexOf​(int ch) : 
+        Returns the index within this string of the first occurrence of the specified character.
+        
+        boolean	isBlank() : Returns true if the string is empty or contains only white space codepoints, otherwise false.
+        boolean	isEmpty() : Returns true if, and only if, length() is 0.
+        
+        static String	join​(CharSequence delimiter, CharSequence... elements)	
+        Returns a new String composed of copies of the CharSequence elements joined together with a copy of 
+        the specified delimiter.
+
+
+        int	lastIndexOf​(int ch)	
+        Returns the index within this string of the last occurrence of the specified character.
+
+        int	length()	
+        Returns the length of this string.
+
+        Stream<String>	lines()	
+        Returns a stream of lines extracted from this string, separated by line terminators.
+
+        boolean	matches​(String regex)	
+        Tells whether or not this string matches the given regular expression.
+
+        String	repeat​(int count)	
+        Returns a string whose value is the concatenation of this string repeated count times.
+
+        String	replace​(char oldChar, char newChar)	
+        Returns a string resulting from replacing all occurrences of oldChar in this string with newChar.
+
+        String[]	split​(String regex)	
+        Splits this string around matches of the given regular expression.
+
+        String[]	split​(String regex, int limit)	
+        Splits this string around matches of the given regular expression.
+
+        boolean	startsWith​(String prefix)	
+        Tests if this string starts with the specified prefix.
+
+        boolean	startsWith​(String prefix, int toffset)	
+        Tests if the substring of this string beginning at the specified index starts with the specified prefix.
+
+        String	strip()	
+        Returns a string whose value is this string, with all leading and trailing white space removed.
+
+        String	stripLeading()	
+        Returns a string whose value is this string, with all leading white space removed.
+
+        String	stripTrailing()	
+        Returns a string whose value is this string, with all trailing white space removed.
+
+        String	substring​(int beginIndex)	
+        Returns a string that is a substring of this string.
+
+        String	substring​(int beginIndex, int endIndex)	
+        Returns a string that is a substring of this string.
+
+        char[]	toCharArray()	
+        Converts this string to a new character array.
+
+        String	toLowerCase()	
+        Converts all of the characters in this String to lower case using the rules of the default locale.
+
+
+        String	toString()	
+        This object (which is already a string!)
+
+        String	toUpperCase()	
+        Converts all of the characters in this String to upper case using the rules of the default locale.
+
+
+        String	trim() : remove extra space
+
 
 #### new methods in java 9/11/new versions
 
@@ -86,6 +177,11 @@
 #### How to implement immutable class
 
         tobe updated
+
+#### comparing strings
+
+        .equals : compare content
+        .compareTo : compare lexicographically : dictionary order, -1 , 0(equal) , 1
 
 #### blank final variable
 
