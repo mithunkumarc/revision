@@ -256,15 +256,45 @@ java 9 Modules Introduction
                 java.util.Date date;
                 java.sql.Date sqlDate;
                 
-        packages and declaring package
-        access specifiers
-        Rules for source files
-        Object Oriented Language Brief
-        sending parameter values to method,[ var...args ]
-        inheritance and encapsulation
-        overloading methods
-        abstract classes
+#### packages and declaring package
+        
+        tobe updated
+     
+#### access specifiers: 
 
+        public : 
+        accessed/visible everywhere, applied to class, variable, method, constructor, interface
+        
+        protected : 
+        visible inside the package and only for subclass outside the package
+        applied to variable, constructor and method
+        
+        default(no specifier) : 
+        visible only inside the package
+        applied to variable, class, constructor, method, interface
+        
+        private : visible only inside the class
+        applied to variable, constructor and method
+        private method : internal purpose
+        private instance variable : encapsulation
+
+        * not applied to local variables
+
+#### Rules for source files        
+     
+        tobe updated
+        
+#### sending parameter values to method,[ var...args ]
+        
+        tobe updated
+        
+#### overloading methods
+        
+        tobe updated
+        
+#### abstract classes
+
+        tobe updated
 #### Constructor
         
         member of class
