@@ -35,6 +35,10 @@
                                 - LinkedHashMap
         
             generics
+            wrapper class
+            autoboxing
+            java 11 autoboxing
+            unboxing
             Collection hierarchy and generics - forEach loop
             Lists : include split iterator
               Immutable : List.of
