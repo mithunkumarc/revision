@@ -16,7 +16,17 @@
 
         class Animal {
             String name = "abc";
+            public void eat(){}
         }
         class Dog extends Animal {
             String name = "def";
+            public void eat(){}
         }
+
+        problem case : 
+        Animal a = new Dog();
+        System.out.println(a.name); // prints "abc"
+        a.eat(); // dog eat
+        
+        method called are always overridden(on which object called)(polymorphism)
+        instance variables values are parent class
