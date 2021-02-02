@@ -41,3 +41,15 @@
 #### static final mehtod
         
         tobe updated
+        
+#### static vs instance calls
+
+
+
+| Type        | Calling           | Legal?  | How? |
+| ------------- |:-------------:| -----:| :---:  |
+| Static method      | Another static method or variable | Yes |  Using the classname  |
+| Static method      |  An instance method or variable      |   No |  |
+| Instance method | A static method or variable      |    Yes |  Using the classname or a reference variable |
+| Instance method |  Another instance method or variable      |    Yes |  Using a reference variable |
+        
