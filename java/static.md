@@ -52,4 +52,66 @@
 | Static method      |  An instance method or variable      |   No |  |
 | Instance method | A static method or variable      |    Yes |  Using the classname or a reference variable |
 | Instance method |  Another instance method or variable      |    Yes |  Using a reference variable |
+
+
+#### static variables
         
+        shared by all instances, accessed by reference var/classname
+        example usage : counter
+        using final keyword with static variable makes it constant. eg : pi = 3.14;
+        can point to object(becomes Static object)
+        
+
+#### static methods
+
+        access modifiers can be applied
+        called using reference var/classname
+        can access other static methods, cannot access instance variables, cannot call instance methods.
+        static methods are inherited
+        can static method be final? yes. In the child class this cannot be hidden.
+        static methods can be private.
+        
+        
+#### static blocks
+
+        static blocks used for initialization
+        executed when class is loaded
+        executed even before main method gets executed
+        
+#### order of initialization
+
+                package basics;
+                class Animal{
+                        static {
+                                System.out.println("animal static block");
+                        }
+                }
+                class Dog extends Animal{
+                        static {
+                                System.out.println("dog static block");
+                        }
+                }
+                class LabradorDog extends Dog{
+                        static {
+                                // skipped, as LabradorDog not instantiated(or its child child class)
+                                System.out.println("labrador static block");
+                        }
+                }
+                public class HelloWorld {
+                        static{
+                                System.out.println("helloworld static block");
+                        }	
+                        public static void main(String[] args) {
+                                LabradorDog.class.toString();
+                                Dog l = new Dog();
+                        }
+                }
+
+                /*
+                 * output : 
+                 * 	helloworld static block
+                        animal static block
+                        dog static block
+
+                 * */
+
