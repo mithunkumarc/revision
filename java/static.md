@@ -2,6 +2,7 @@
 
         The static keyword in java is used for memory management mainly.
         if all objects of same class need same(shared) info then we can use static field in class
+        save memory
 
         can be applied to : 
 
