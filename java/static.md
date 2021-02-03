@@ -1,4 +1,26 @@
+#### why static 
 
+        The static keyword in java is used for memory management mainly.
+        if all objects of same class need same(shared) info then we can use static field in class
+
+        can be applied to : 
+
+                variables, 
+                methods, 
+                blocks and 
+                nested class
+
+        outer class, interface cannot be static
+        
+        ●	They can only call other static methods.
+        ●	They can only access static data.
+        ●	They cannot refer to this or super in any way.
+
+
+#### Access static member
+
+        To access static member , no need to create object, we can access static member directly using className.
+        Static members saved in class area along with class, so static methods cannot access instance variables.
 
 #### static methods can be overloaded
 
@@ -70,6 +92,9 @@
         static methods are inherited
         can static method be final? yes. In the child class this cannot be hidden.
         static methods can be private.
+        static methods can be overloaded
+        static methods are inherited
+        static methods cannot be overriden but hidden. (code semantic same as overriding though)
         
         
 #### static blocks
@@ -77,6 +102,15 @@
         static blocks used for initialization
         executed when class is loaded
         executed even before main method gets executed
+        parent static blocks are executed first and child static blocks are executed(parent-child class)
+        
+        
+        Static blocks are executed when class are loaded into memory.
+
+        When subclass object is created, static block of parent class executed first because 
+        parent class loaded first then subclass static block is executed when subclass is loaded into memory.
+
+        
         
 #### order of initialization
 
