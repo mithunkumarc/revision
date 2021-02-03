@@ -10,6 +10,7 @@
                 methods, 
                 blocks and 
                 nested class
+                nested interface
 
         outer class, interface cannot be static
         
