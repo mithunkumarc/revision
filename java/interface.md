@@ -26,6 +26,19 @@ An interface can also include a list of
       has to provide implementation even though they don't need it. if Default method is added to interface
       now class has option if they want to provide/override implementation.
 
+
+
+#### why private methods
+
+      some helper methods used by interface internally
+  
+#### why static methods
+
+      As interface is not intended to create object, so it supports static methods
+      Access static methods using Interface name
+
+
+
 #### If a class inherits same default method from two different interfaces
   
 
@@ -45,13 +58,20 @@ An interface can also include a list of
       public class TestDefaultClass implements First, Second {
           // override method() here and mark it public
       }
+      
+#### IF a class implements two interfaces, which have static method with same name      
 
+      interface First {
+        public static void method() {
+          System.out.println("first");
+        }
+      }
+      interface Second {
+        public static void method() {
+          System.out.println("second");
+        }
+      }
+      
+      // class need not to worry as static methods are called using respective interface name
+      public class TestStatic implements First, Second {}
 
-#### why private methods
-
-      some helper methods used by interface internally
-  
-#### why static methods
-
-      As interface is not intended to create object, so it supports static methods
-      Access static methods using Interface name
