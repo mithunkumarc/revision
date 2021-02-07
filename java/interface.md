@@ -49,6 +49,45 @@ An interface can also include a list of
       As interface is not intended to create object, so it supports static methods
       Access static methods using Interface name
 
+
+#### polymorphism
+
+
+			interface Flyable {
+				public void fly();
+			}
+
+			// hierarchy flying vehicles
+			class Helicoptor implements Flyable {
+				@Override
+				public void fly() {
+					System.out.println("helicoptor fly");
+				}
+			}
+
+			// bird hierarchy
+			class Parrot implements Flyable {
+				@Override
+				public void fly() {
+					System.out.println("parrot fly");
+				}
+			}
+
+			public class TestFlyable {
+				// polymorphic
+				public void testFly(Flyable f) {
+					f.fly();// if f is bird calls bird's fly method...likewise
+				}
+				public static void main(String[] args) {
+					Flyable f1 = new Helicoptor();
+					Flyable f2 = new Parrot();
+					TestFlyable t = new TestFlyable();
+					t.testFly(f1);
+					t.testFly(f2);
+				}
+			}
+
+
 #### single abstract method interface or Funtional interfaces
 
       Interface with single abstract method also called Functional interfaces.
