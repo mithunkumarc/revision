@@ -26,10 +26,59 @@ for all of the inherited abstract methods.
 
         }
 
-#### Declaring abstracting method
+#### Declaring abstract method
 
         // ends with semicolon without body
         public abstract void method();
+        
+#### Abstract class force subclass to implement
+
+        abstract class GeometricShape {
+            public abstract void draw();
+        }
+
+        class Circle extends GeometricShape {
+            // circle has to give draw implementation
+            public void draw() {
+                // draw circle
+            }
+        }
+
+#### If a class inherits abstract method, it has option to give implementation or maitain abstract
+
+            abstract class GeometricShape {
+                public abstract void draw();
+            }
+
+            abstract class Circle extends GeometricShape {
+                // maintain draw method as abstract here
+            }
+
+#### what is concreate class
+
+            last class in inheritance class hierarchy
+
+#### Contrete class has to give implemention in abstract classes hierarchy 
+    
+        // if contrete class aslo abtract then we cannot create instance, no use of creating class hierarchy
+        
+        abstract class GeometricShape {
+            public abstract void draw();
+        }
+
+        abstract class Circle extends GeometricShape {
+            // maintain draw method as abstract here
+        }
+
+        // concrete class giving implementation
+        // you can mark this class abstract too
+        // if you cant create any instance from hierarchy of classes then no point of being created
+        class BigCircle extends Circle {
+            public void draw() {
+                System.out.println("draw big circle");
+            }
+        }
+
 
 #### Abstract class cannot be final
 
