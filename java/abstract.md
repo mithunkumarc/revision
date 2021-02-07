@@ -29,6 +29,7 @@ for all of the inherited abstract methods.
 #### Declaring abstract method
 
         // ends with semicolon without body
+        // cannot be declared as final
         public abstract void method();
         
 #### Abstract class force subclass to implement
