@@ -49,6 +49,23 @@ class.
 
 
 
+
+#### Anonymous class : creating direct object instead of creating subclass
+
+     Anonymous class : when to use : like use and throw situation, one instance
+     class : when to use : situation where we have to create many objects 
+     
+#### Lambdas cannot be created from Anonymous class created from Abstract class.
+    
+    abstract class Car {
+        public abstract int square(int n);
+    }
+    
+    Car c = n -> n * n; // error  : must be functional interface
+    
+    * Lambdas can be created from functional interface only
+
+
 #### Abstract class vs Interface
 
     Abstract class : if we need instance with both state and behaviour
