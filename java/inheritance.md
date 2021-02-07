@@ -18,4 +18,7 @@
 
       reuse code
       
-####
+#### impact of access modifiers while inheriting 
+#### static polymorphism : overloading methods
+#### dynamic polymorphism : overrding methods
+#### impact of throws exception declaration on methods
