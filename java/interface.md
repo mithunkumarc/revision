@@ -11,7 +11,7 @@ Achieve multiple inheritance , one interface extends multiple interfaces.
 An interface can also include a list of  
   
       constant variables and
-      abstract method
+      abstract method : abstract keyword is optional
       default methods
       private methods
       static methods
@@ -42,8 +42,61 @@ An interface can also include a list of
 
       As interface is not intended to create object, so it supports static methods
       Access static methods using Interface name
+      
+#### If a interface inherits two or more methods which have same method name.
+
+        a. abtract method
+
+        interface First {
+          abstract void method();
+        }
+        interface Second {
+          abstract void method();
+        }
+
+        interface Third extends First, Second {
+          // it doesn't matter which abstract method() it inherits both are empty
+        }
 
 
+        b. default method
+        
+        interface First {
+          default void method() {
+            System.out.println("first");
+          }
+        }
+        interface Second {
+          default void method() {
+            System.out.println("second");
+          }
+        }
+
+        interface Third extends First, Second {
+          // this method() has to override here, else error thrown
+          default void method() {
+            System.out.println("third");
+          }
+        }
+
+        c. static method
+        
+        interface First {
+          public static void method() {
+            System.out.println("first");
+          }
+        }
+        interface Second {
+          public static void method() {
+            System.out.println("second");
+          }
+        }
+
+        interface Third extends First, Second {
+            // neither from First or Second static method() not inherited here
+        }
+        
+        // in main method, Third.method(); throws error
 
 #### If a class inherits same default method from two different interfaces
   
