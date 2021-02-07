@@ -4,8 +4,15 @@
       constructors (even though cannot be instantiated: child class constructor call this)
       public/default access modifiers allowed        
       can have static method
+      
+#### Why abstract class
 
-some rules 
+        If we don’t know the behaviour of some action we can declare abstract method.
+        Abstract helps to concentrate on designing projects
+        Abstract methods force subclass to implement methods
+        Its sole purpose, mission in life, is to be extended (subclassed).       
+
+#### some rules 
 
 1. Abstract classes cannot be instantiated directly. 
     Doesnt makes sense to create instance with out implementation.(object don't know how to behave)
@@ -113,8 +120,14 @@ method. For example, the name and signature must be the same, and the visibility
 the method in the subclass must be at least as accessible as the method in the parent
 class.
 
-#### interfaces can have abstract methods, default methods, static methods and private methods
+#### interfaces can have 
 
+    constants
+    abstract methods, 
+    default methods, 
+    static methods and 
+    private methods
+    nested interface
 
 
 
