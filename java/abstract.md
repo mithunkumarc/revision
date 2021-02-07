@@ -1,4 +1,4 @@
-#### Abstract class : 
+#### Abstract class : class with abtract method.
     
       can have instance variables
       constructors (even though cannot be instantiated: child class constructor call this)
@@ -25,6 +25,11 @@ for all of the inherited abstract methods.
         abstract class Car {
 
         }
+
+#### Declaring abstracting method
+
+        // ends with semicolon without body
+        public abstract void method();
 
 #### Abstract class cannot be final
 
