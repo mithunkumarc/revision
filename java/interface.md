@@ -95,11 +95,13 @@ An interface can also include a list of
 
       Interface with single abstract method also called Functional interfaces.
       Single abstract method interfaces can be used to create lambdas
+      lambdas replaces anonymous classes
       
       abstract interface Squarable {
             public int square(int n);
       }
       
+	// anonymous class      
       Squarable s = new Squarable() {			
 			@Override
 			public int square(int n) {
@@ -108,7 +110,8 @@ An interface can also include a list of
 		};
 	System.out.println(s.square(5));
 
-      //above code can be rewirtten as 
+      //above code can be rewirtten as
+      // replacing anonymous class with lambda
       Squarable s = (int n) -> n * n;
 	System.out.println(s.square(5));
 
