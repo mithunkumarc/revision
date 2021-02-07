@@ -3,6 +3,7 @@
       can have instance variables
       constructors (even though cannot be instantiated: child class constructor call this)
       public/default access modifiers allowed        
+      can have static method
 
 some rules 
 
