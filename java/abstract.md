@@ -31,6 +31,15 @@ for all of the inherited abstract methods.
         // the purpose of abstract class is to force subclass to give implementation
         // final will stop inheritance
 
+#### Abstract class can have implemented methods
+
+        abstract class Car {
+            public void start(int n) {
+                System.out.println("start");
+            }
+        }
+
+
 #### abstract method : 
 
 1. Abstract methods may only be defined in abstract classes.
