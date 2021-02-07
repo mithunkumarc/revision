@@ -31,6 +31,8 @@ for all of the inherited abstract methods.
 
         // ends with semicolon without body
         // cannot be declared as final
+        // It must be implemented in child class or concrete child class.
+        // Abstract method must be inside a abstract class.
         public abstract void method();
         
 #### Abstract class force subclass to implement
