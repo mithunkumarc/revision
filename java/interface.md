@@ -4,6 +4,8 @@ public methods that any class implementing the interface must provide.
 Interfaces cannot be instantiated—they can only be implemented by classes or extended by other interfaces.    
 In abstract method, abstract keyword is optional.  
 
+Interfaces used to achieve abstraction. Behaviour without implementation.
+
 An interface can also include a list of 
   
       constant variables and
