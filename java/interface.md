@@ -48,6 +48,32 @@ An interface can also include a list of
 
       As interface is not intended to create object, so it supports static methods
       Access static methods using Interface name
+
+#### single abstract method interface or Funtional interfaces
+
+      Interface with single abstract method also called Functional interfaces.
+      Single abstract method interfaces can be used to create lambdas
+      
+      abstract interface Squarable {
+            public int square(int n);
+      }
+      
+      Squarable s = new Squarable() {			
+			@Override
+			public int square(int n) {
+				return n * n;
+			}
+		};
+	System.out.println(s.square(5));
+
+      //above code can be rewirtten as 
+      Squarable s = (int n) -> n * n;
+	System.out.println(s.square(5));
+
+      //or, datatype int is optional
+      Squarable s = n -> n * n;
+      System.out.println(s.square(5));
+      
       
 #### If a interface inherits two or more methods which have same method name.
 
