@@ -2,7 +2,7 @@
     
       can have instance variables
       constructors (even though cannot be instantiated: child class constructor call this)
-      
+      public/default access modifiers allowed        
 
 some rules 
 
@@ -18,6 +18,18 @@ as its own abstract methods.
 5. The first concrete class that extends an abstract class must provide an implementation
 for all of the inherited abstract methods.
 
+
+#### Empty abstract class is allowed
+
+        abstract class Car {
+
+        }
+
+#### Abstract class cannot be final
+
+        abstract final class Car {} // class can be either abstract or final not both
+        // the purpose of abstract class is to force subclass to give implementation
+        // final will stop inheritance
 
 #### abstract method : 
 
