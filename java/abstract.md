@@ -6,7 +6,8 @@
 
 some rules 
 
-1. Abstract classes cannot be instantiated directly.
+1. Abstract classes cannot be instantiated directly. 
+    Doesnt makes sense to create instance with out implementation.(object don't know how to behave)
 
 2. Abstract classes may be defined with any number, including zero, of abstract and nonabstract methods.
 
