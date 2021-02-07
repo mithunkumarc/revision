@@ -118,7 +118,14 @@ An interface can also include a list of
       //or, datatype int is optional
       Squarable s = n -> n * n;
       System.out.println(s.square(5));
-      
+
+#### Not all Anonymous class can be replaced with lambdas
+
+	only Anonymous class created from single abstract method can be 
+	replaced with lambda. 
+	If Anonymous class is created from interface with
+	more than one abstract method or abstract class. It cannot be 
+	replaced with lambda.
       
 #### If a interface inherits two or more methods which have same method name.
 
