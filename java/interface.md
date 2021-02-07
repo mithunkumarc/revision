@@ -1,6 +1,9 @@
 An interface is an abstract data type that defines a list of abstract
 public methods that any class implementing the interface must provide.  
 
+Access Specifiers Public or default is allowed to declare Interface. protected and private not allowed.  
+Interface cannot be final.  
+
       // abstract keyword is optional here
       // interfaces are by default abstract
       abstract interface First {
