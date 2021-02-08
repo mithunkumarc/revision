@@ -17,7 +17,15 @@
 #### why inheritance : 
 
       reuse code
+
+
+#### super/base/parent class, child/subclass 
+
+      parent class : top class is call parent class
+      subclass : class which inherits properties from other class is called subclass
       
+#### 
+
 #### impact of access modifiers while inheriting 
 #### static polymorphism : overloading methods
 #### dynamic polymorphism : overrding methods
