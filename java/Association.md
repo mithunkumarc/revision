@@ -1,3 +1,18 @@
+#### Has A relationship
+
+	Car Has Engine	
+	
+	class Car {
+		Engine engine;
+	}
+	
+	Bag Has list of Books
+	
+	class Bag {
+		List<Book> books;
+	}
+	
+
 #### composition
 
         Composition : one depend on another object
