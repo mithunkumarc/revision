@@ -3,12 +3,12 @@
       to solve read world problems
       simulating real world problems to software solved by oops concepts.
       
-      inheritance : reuse
+      inheritance : reuse, scalable, modular
       encapsulation : data safety
       polymorphism : behaving different at differenct situations
       abstraction : igonoring unnecessary details, focusing on what is required
 
-#### inheritance : 
+#### inheritance : IS A relationship
 
       Class inherits properties from another classs
       Classes doesn't supprt multiple inheritance.
