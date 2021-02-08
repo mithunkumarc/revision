@@ -13,6 +13,7 @@
       Class inherits properties from another classs
       Classes doesn't supprt multiple inheritance.
       Inheritance support multiple inheritance.
+      child class can have other property along with inherited properties. 
       
 #### why inheritance : 
 
@@ -24,7 +25,36 @@
       parent class : top class is call parent class
       subclass : class which inherits properties from other class is called subclass
       
-#### 
+#### situation : parent and child class in same package
+      
+      By default all public, protected and default methods will be inherited to subclass
+      Child class can hide instance field or override method.
+
+#### situation : parent and child class in different package
+
+      // package MainBranch
+      package mainbranch;
+      public class Manager {
+            public String file1;
+            protected String file2;
+            String file3;
+            private String file4;
+      }
+
+      // package SubBrach
+      package subbranch;
+      import mainbranch.Manager;
+      public class BranchManager extends Manager {
+            public void readFiles(Manager m) {
+                  System.out.println(m.file1); // can read parent public copy
+                  // cannot read protected, default and private property
+                  System.out.println(this.file1); // public property inherited 
+                  System.out.println(this.file2); // protected property inherited
+                  //file3(default) and anyway file4 is private and is not inherited
+            }
+      }
+
+      
 
 #### impact of access modifiers while inheriting 
 #### static polymorphism : overloading methods
