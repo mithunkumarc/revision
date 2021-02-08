@@ -28,7 +28,8 @@
 #### situation : parent and child class in same package
       
       By default all public, protected and default methods will be inherited to subclass
-      Child class can hide instance field or override method.
+      Child class can hide(give new value other than parent) instance field or 
+      override(change implemenatation) inheriting method.
 
 #### situation : parent and child class in different package
 
