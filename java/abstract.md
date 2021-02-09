@@ -106,6 +106,18 @@ for all of the inherited abstract methods.
         }
 
 
+#### Abstract class reference variable can point to its child class Instance
+
+        abstract class Car {
+            // some abstract methods
+        }
+        class MiniCar extends Car {
+            // override abstract methods
+        }
+        
+        // in main method
+        Car c = new MiniCar();
+
 #### abstract method : 
 
 1. Abstract methods may only be defined in abstract classes.
