@@ -7,10 +7,16 @@ The most common use of polymorphism in OOP occurs when a parent class reference 
   
     Parent p = new Child();
 
-Inheritance and polymorphism will go hand in hand. Without inheritance there is no polymorphism.
+Inheritance and polymorphism will go hand in hand.  
+Without inheritance there is no polymorphism.
 
 
 1. overloading methods
+
+      more then one mehtod is created with same name but different returntype or different parameters(or order of parameters)
+      
+      
+      
 
 2. overriding methods
 
