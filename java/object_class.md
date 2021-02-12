@@ -69,3 +69,27 @@
         //overloaded with time millisenconds
         void	wait()	
         Causes the current thread to wait until it is awakened, typically by being notified or interrupted.
+
+
+#### overriding hashcode and equals method
+
+1. required while comparing two instances.
+2. Each object has its unique hashcode in java.
+3. lets consider p1 = new Person {"vinay",30} and p2 = new Person {"vinay",30}
+4. p1 and p2 , gets two different hashcodes
+5. p1 == p2 is false as two variables pointing to two different instances
+6. now p1.equals(p2) returns false, because equals checks hashcode of p1 and p2
+
+equals method logic : 
+        
+        if hashcode of two objects are different then they are 100% different
+        if hashcode of two objects are same, they could be same or different
+        equals comes to picture when hashcode of two objects are same
+        it checks content(may be name and age of person) and returns true/false.
+        
+contract : when you override hashcode , you should override equals too.
+
+7. override hashcode of Person lets say return p.name.length + p.age
+8. so both p1 and p2 gets same hashcode : 5 + 30 = 35.
+9. just overriding hashcode is bad idea because vinay and vijay both have same length
+10. override equals : return p1.name.equals(p2.name) && p1.age == p2.age;
