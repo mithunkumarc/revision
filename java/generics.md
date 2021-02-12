@@ -80,4 +80,7 @@ while the inputs to type parameters are types.
         public T t; // T must be subclas of animal
     }
 
-https://www.javaguides.net/
+
+#### bounded, wildcards  
+
+        tobe updated : https://www.javaguides.net/
