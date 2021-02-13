@@ -83,7 +83,22 @@ while the inputs to type parameters are types.
 #### without generics there will be warning
 
         .. unsafe operations
+        
+#### variable declaration must match the type you pass to the actual object type.
 
+        class Parent {
+	
+        }
+        class Child {
+
+        }
+        // inside main, parent type child instance doesn't match
+        List<Parent> myList = new ArrayList<Child>(); // error
+        
+        // works
+        List<Parent> myList = new ArrayList<Parent>();
+        List<Child> myList = new ArrayList<Child>();
+        
 #### bounded, wildcards  
 
         tobe updated : https://www.javaguides.net/
