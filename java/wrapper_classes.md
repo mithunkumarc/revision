@@ -59,3 +59,10 @@
         // above code translated to : Integer val = Integer.valueof(2);
         
         
+#### unboxing
+
+                Integer i1 = 1000;
+		int i3 = i1; // unboxing, instance converted back to primitive type
+                System.out.println(i1 instanceof Integer); // true
+		System.out.println(i3 instanceof Integer); // compile error, i3 is primitive type not instance
+                
