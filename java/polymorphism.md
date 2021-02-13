@@ -6,6 +6,7 @@ In other words, polymorphism allows you to define one interface(methods) and hav
 The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.  
   
     Parent p = new Child();
+    List mylist = new ArrayList(); // mylist can be ArrayList and also any other instance implemented List interface
 
 Inheritance and polymorphism will go hand in hand.  
 Without inheritance there is no polymorphism.
