@@ -34,7 +34,36 @@
                         - HashMap(c)
                                 - LinkedHashMap
         
-            generics
+#### List : 
+
+      Ordered, 
+      duplicates allowed, 
+      index based
+
+
+#### Set  :
+        
+        May or may not be ordered (hashset not ordered, linkedhashset ordered)
+        may be sorted(treeset) 
+        duplicates not allowed
+
+#### Map : 
+
+        May be oredered : LinkedHashMap
+        may not be ordered : HashMap
+        sorted ; TreeMap 
+        duplicate keys are not allowed.
+
+#### Queue
+
+        Queues of things to process Ordered by FIFO or by priority
+
+#### ordered vs sorted
+
+        ordered : same as the user add element 
+        sorted : number : ascending descending, string : alphabetical
+
+            
             wrapper class
             autoboxing
             java 11 autoboxing
