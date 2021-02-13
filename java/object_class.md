@@ -93,3 +93,14 @@ contract : when you override hashcode , you should override equals too.
 8. so both p1 and p2 gets same hashcode : 5 + 30 = 35.
 9. just overriding hashcode is bad idea because vinay and vijay both have same length
 10. override equals : return p1.name.equals(p2.name) && p1.age == p2.age;
+
+
+#### when to override hashcode and equals
+        
+        when a class is added to collections like HashMap, HashSet, Hashtable, LinkedHashMap, 
+        and LinkedHashSet use hashing.
+        eg : 
+        Set<Person> pset = new HashSet<Person>();
+
+        // override person's hashcode and equals to rule out duplicate person.
+
