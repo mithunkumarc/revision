@@ -42,10 +42,11 @@
         be wrapped, but autoboxing takes care of it for you.
         
         List<Integer> mylist = new ArrayList<Integer>();
-        mylist(5); // translated to : mylist(new Integer(5));
+        mylist(5); // translated to : mylist(new Integer(5)); or mylist(Integer.valueOf(5));
+        
         
         // another example for autoboxing
         Integer val = 2; // autoboxing
-        // another example for autoboxing
+        // above code translated to : Integer val = Integer.valueof(2);
         
         
