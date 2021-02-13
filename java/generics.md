@@ -80,6 +80,9 @@ while the inputs to type parameters are types.
         public T t; // T must be subclas of animal
     }
 
+#### without generics there will be warning
+
+        .. unsafe operations
 
 #### bounded, wildcards  
 
