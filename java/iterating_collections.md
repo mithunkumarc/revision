@@ -89,7 +89,8 @@ using different iterating ways
 1. when we call trySplit it splits collections to half. 
 2. splititerator on which you call trysplit retain second half, and first half given to new SplitIterator
 3. you can keep on apply trySplit as long as you can split collection to two halves
-        
+
+
                 List<Student> myList = new ArrayList<Student>();
 		myList.add(new Student("raj"));
 		myList.add(new Student("taj"));
@@ -104,7 +105,7 @@ using different iterating ways
 		System.out.println("main split");
 		mainSplit.forEachRemaining(s -> System.out.println(s));
 		System.out.println("child split one");
-		childSplitOne.forEachRemaining(s -> System.out.println(s));        
+		childSplitOne.forEachRemaining(s -> System.out.println(s));
                 // you can trySplit ChildSplitOne again
                 // Spliterator<Student> childSplitTwo = childSplitOne.trySplit();
                 // first half with childSplitTwo and rest with childSplitOne
