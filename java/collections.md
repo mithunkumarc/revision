@@ -24,6 +24,13 @@
                         HashSet(c), 
                         LinkedHashSet(c)
 
+#### Collection class/interface
+
+        collection api Represents the data structure in which objects are stored
+
+        Collection java.util interface from which Set and List extend
+        Collections A class that holds static collection utility methods
+
 #### Map : 
 
                 Map(i) 
