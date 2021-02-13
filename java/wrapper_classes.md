@@ -1,5 +1,14 @@
 #### wrapper class
 
+        byte	Byte
+        short	Short
+        int	Integer
+        long	Long
+        float	Float
+        double	Double
+        boolean	Boolean
+        char	Character
+
 #### collections can hold objects but not primitives. 
 
         collections supports only objects.
@@ -23,5 +32,15 @@
 #### Autoboxing : after java 5
 
         Prior to Java 5, you had to “wrap” a primitive manually before
-        you could put it into a collection. Starting with Java 5, primitives still have to
+        you could put it into a collection. 
+        
+        Integer i = new Integer(5);
+        List<Integer> mylist = new ArrayList<Integer>();
+        mylist(i);
+        
+        Starting with Java 5, primitives still have to
         be wrapped, but autoboxing takes care of it for you.
+        
+        List<Integer> mylist = new ArrayList<Integer>();
+        mylist(5); // translated to : mylist(new Integer(5));
+        
