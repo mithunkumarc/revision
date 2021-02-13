@@ -8,6 +8,15 @@
         double	Double
         boolean	Boolean
         char	Character
+        
+        
+#### compraing wrapper class objects 
+
+        Integer i1 = 1000; // autoboxing : Intger.valueOf(1000);
+        Integer i2 = 1000; // autoboxing : Intger.valueOf(1000);
+        
+        i1 == i2;// false : as i1 and i2 points to two differenct instances
+        i1.equals(i2);// true : as content is same : 1000
 
 #### collections can hold objects but not primitives. 
 
