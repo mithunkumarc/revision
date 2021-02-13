@@ -63,7 +63,52 @@
         ordered : same as the user add element 
         sorted : number : ascending descending, string : alphabetical
 
-            
+#### collection classes
+
+
+        ArrayList Fast iteration and fast random access.
+
+        Vector It’s like a slower ArrayList, but it has synchronized methods.
+
+        LinkedList Good for adding elements to the ends, i.e., stacks and
+        queues.
+
+        HashSet Fast access, assures no duplicates, provides no ordering.
+
+        LinkedHashSet No duplicates, iterates by insertion order.
+
+        TreeSet No duplicates, iterates in sorted order.
+
+        HashMap Fastest updates (key/values); allows one null key, many
+        null values.
+
+        Hashtable Like a slower HashMap (as with Vector, due to its
+        synchronized methods). No null values or null keys allowed.
+
+        LinkedHashMap Faster iterations; iterates by insertion order or last
+        accessed; allows one null key, many null values.
+
+        TreeMap A sorted map.
+
+        PriorityQueue A to-do list ordered by the elements’ priority.
+
+        ArrayDeque Like an ArrayList only better performance; ordered
+        only by index. Good for stacks and queues.
+
+
+#### ArrayList vs LinkedList
+
+        ArrayList : single block of memory, fast read, delete/create slow.
+        LinkedList : linked memory, fast delete/create, and slow read.
+
+#### HashSet vs LinkedHashSet vs TreeSet
+
+        HashSet : when order is not cared. 
+        LinkedHashSet : Order is important. 
+        TreeSet : sorted order
+
+#### tobe covered
+
             wrapper class
             autoboxing
             java 11 autoboxing
