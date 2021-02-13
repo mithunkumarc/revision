@@ -44,3 +44,8 @@
         List<Integer> mylist = new ArrayList<Integer>();
         mylist(5); // translated to : mylist(new Integer(5));
         
+        // another example for autoboxing
+        Integer val = 2; // autoboxing
+        // another example for autoboxing
+        
+        
