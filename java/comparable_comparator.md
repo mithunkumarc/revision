@@ -14,6 +14,34 @@ comparable.
 
 To be searched, an array or List must first be sorted.
 
+#### comparable vs comparator
+
+        both used to sort collections/array
+        comparable : compare logic implemented by the class which implements comparable interface
+        
+                        Collections.sort(studentList); // student class implements comparable 
+                
+        comparator : compare logic implemented by dedicated class which implements comparator, pass as argument to 
+                        collections
+                                                
+                        Collections.sort(studentList, nameComparator); // class NameComparator implements comparator
+
+
+
+| Comparable           | Comparator  |
+|:-------------:| :-----:|
+| single sorting sequence | multiple sorting sequences (eg: NameComparator, AgeComparator |
+|  affects the original class     | doesn't affect the original class  |
+|  provides compareTo() method   |  compare()  |
+| java.lang | java.util |
+| Collections.sort(studentList)  | Collections.sort(studentList, nameComparator) |
+
+
+#### we can use comparable comparator for sorting list, for set/map they have treeset and treemap
+
+        Collections.sort(studentList) // comparable 
+        Collections.sort(studentList, nameComparator) // comparator 
+
 
 #### TreeSet : custom sort : class should implement Comparable interface
 
