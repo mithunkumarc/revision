@@ -95,7 +95,7 @@
         LinkedHashMap Faster iterations; iterates by insertion order or last
         accessed; allows one null key, many null values.
 
-        TreeMap A sorted map.
+        TreeMap A sorted map. sorts primitive types. use comparable for sorting user defined objects.
 
         PriorityQueue A to-do list ordered by the elements’ priority.
 
