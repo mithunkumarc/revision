@@ -51,7 +51,27 @@ model class : Student
         }
         */
 
-#### 2. looping map using forEach
+#### 2. using iterator
+
+                Student s1 = new Student("kaj");
+		Student s2 = new Student("saj");
+		Student s3 = new Student("maj");
+		Student s4 = new Student("vaj");
+		Student s5 = new Student("paj");
+		Map<Integer, Student> studentMap = new HashMap();
+		studentMap.put(1, s1);
+		studentMap.put(2, s2);
+		studentMap.put(3, s3);
+		studentMap.put(4, s4);
+		studentMap.put(5, s5);
+		Iterator<Map.Entry<Integer, Student>> iterator = studentMap.entrySet().iterator();
+		while(iterator.hasNext()) {
+			Entry<Integer, Student> entry = iterator.next();
+			System.out.println(entry.getKey() +":"+ entry.getValue());
+		}
+
+
+#### 3. looping map using forEach
 
         Student s1 = new Student("kaj");
         Student s2 = new Student("saj");
