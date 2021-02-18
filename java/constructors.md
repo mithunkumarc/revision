@@ -72,6 +72,21 @@
             this.age = 0; // int default vlaue is zero
           }
 
+#### parameterized constructor
+
+      constructor which accepts arguments is called parameterized construcotor
+      
+      eg:
+      // name age are parameters
+      public Student(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+
+#### when default constructor not provided by compiler
+
+      when user provides a parameterized constructor, compiler wont provide default constructor
+
 #### overloaded constructor 
 
 ##### uses of overloaded constructor : 1. reuse 
