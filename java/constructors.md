@@ -302,6 +302,18 @@
 
 #### return statement
 
+	constructor can have return statement but cannot return any value or object;
+	
+	public ClassName() {
+		return;
+	}
+	
+	return statment implicitly returns address of object created.
+	
+
 #### this super
 
 #### new operator
+
+	The new keyword is a Java operator that creates the object.(allocate memory in heap)
+	The new operator is followed by a call to a constructor, which initializes the new object.
