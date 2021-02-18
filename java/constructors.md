@@ -260,6 +260,30 @@
 
 #### access modifiers
 
+1. pubic constructor
+
+	instantiated anywhere
+	
+2. protected constructor
+	
+	can be instantiated only inside the package
+	outside the package when subclass is instantiated, parent constructor gets called.
+	eg:
+		package pak1;
+		class Laptop{
+			protected Laptop() {}
+		}
+		
+		package pak2;
+		class HPlaptop extends Laptop{
+			Laptop l = new HPlaptop();// calls parent laptop constructor
+		}
+	
+3. construcotor with default access modifier
+	
+4. private constructor : 
+	instantiated only within class
+
 #### return statement
 
 #### this super
