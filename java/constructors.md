@@ -279,9 +279,25 @@
 			Laptop l = new HPlaptop();// calls parent laptop constructor
 		}
 	
-3. construcotor with default access modifier
+3. constructor with default access modifier
+	
+	can be instantiated only inside the package
+	even outside the package subclass cannot be instantiated as parent class constructor is not visible
+	
+	eg : 
+		package pak1;
+		class Laptop{
+			Laptop() {} // default constructor
+		}
+		
+		package pak2;
+		class HPlaptop extends Laptop{
+			// below code doesn't works
+			// Laptop l = new HPlaptop(); // error : parent constructor not visible
+		}
 	
 4. private constructor : 
+
 	instantiated only within class
 
 #### return statement
