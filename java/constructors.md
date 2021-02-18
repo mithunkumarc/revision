@@ -164,7 +164,10 @@
 			this.address = address;
 		}
 
-#### constructor chaining
+#### constructor chaining: one constructor can call another constructor of same class or parent class
+
+		this keyword is used to call another constructor of same class
+		super keyword is used to call parent class constructor
 
 #### access modifiers
 
