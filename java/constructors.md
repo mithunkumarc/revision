@@ -207,8 +207,56 @@
 
 	always parent class constructor called first
 	
+	class Animal {
+		public Animal() {
+			System.out.println("animal constructo");
+		}
+	}
+	class Dog extends Animal {
+		public Dog() {
+			// parent constructor called here using super keyword: super();
+			System.out.println("dog constructor");
+		}
+	}
+	public class HelloWorld {
+		public static void main(String[] args) {
+			Animal a = new Dog();
+		}
+	}
+	// output : 
+	animal constructor
+	dog constructor
 	
-	so that parent class state initialized first and then inherit same in child class.
+	parent class state initialized first and then inherit same in child class.
+
+	class Student {
+		String name;
+		int age;
+		String address;
+		public Student(String name, int age) {
+			this.name = name;
+			this.age = age;
+		}
+	}
+	class CollegeStudent extends Student{
+		public CollegeStudent(String name, int age) {
+			super(name,age); // calling parent class constructor
+		}
+	}
+
+	public class HelloWorld {
+		public static void main(String[] args) {
+			Student s = new Student("saj",12);
+			System.out.println(s.name); // sai
+			System.out.println(s.age); // 12
+		}
+	}
+
+
+#### always parent class constructor fired first
+
+	when we create instance, always parent class constructor called first
+	so that parent fields initialzed first and gets inherited to child class.
 
 #### access modifiers
 
