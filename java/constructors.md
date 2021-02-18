@@ -166,8 +166,49 @@
 
 #### constructor chaining: one constructor can call another constructor of same class or parent class
 
-		this keyword is used to call another constructor of same class
+		// this keyword is used to call another constructor of same class
+		public Student(String name) {
+			this.name = name;
+		}
+		public Student(String name, int age) {
+			this(name);// calling constructor with only string 
+			this.age = age;
+		}
+		public Student(String name, int age, String address) {
+			this(name,age); // calling constructor with string and int
+			this.address = address;
+		}
+		
 		super keyword is used to call parent class constructor
+
+		class Student {
+			String name;
+			int age;
+			String address;
+			public Student(String name, int age) {
+				this.name = name;
+				this.age = age;
+			}
+		}
+		class CollegeStudent extends Student{
+			public CollegeStudent(String name, int age) {
+				super(name,age); // calling parent class constructor
+			}
+		}
+		public class HelloWorld {
+			public static void main(String[] args) {
+				Student s = new Student("saj",12);
+				System.out.println(s.name);
+				System.out.println(s.age);
+			}
+		}
+
+#### order of constructor calling in inheritance
+
+	always parent class constructor called first
+	
+	
+	so that parent class state initialized first and then inherit same in child class.
 
 #### access modifiers
 
