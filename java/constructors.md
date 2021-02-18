@@ -87,12 +87,82 @@
 
       when user provides a parameterized constructor, compiler wont provide default constructor
 
-#### overloaded constructor 
+#### overloaded constructor : some time object knows only few state info while creating
+
+	class Student {
+		String name;
+		int age;
+		String address;
+		// only name
+		public Student(String name) {
+			this.name = name;
+		}
+		// only name and age
+		public Student(String name, int age) {
+			this.name = name;
+			this.age = age;
+		}
+		// all info: name age and address
+		public Student(String name, int age, String address) {
+			this.name = name;
+			this.age = age;
+			this.address = address;
+		}
+	}
+
+	public class HelloWorld {
+		public static void main(String[] args) {
+			Student s1 = new Student("raj");
+			Student s2 = new Student("saj",12);
+			Student s3 = new Student("laj",12,"raybag");
+		}
+	}
+
 
 ##### uses of overloaded constructor : 1. reuse 
 
+	class Student {
+		String name;
+		int age;
+		String address;
+		public Student(String name) {
+			this.name = name;
+		}
+		public Student(String name, int age) {
+			this(name);// reusing constructor with only name
+			this.age = age;
+		}
+		public Student(String name, int age, String address) {
+			this(name,age); // reusing constructor with name and age
+			this.address = address;
+		}
+	}
+	
+	public class HelloWorld {
+		public static void main(String[] args) {
+			Student s1 = new Student("raj");
+			Student s2 = new Student("saj",12);
+			Student s3 = new Student("laj",12,"raybag");
+		}
+	}
+
 ##### uses of overloaded constructor : 2. not all objects have all information
       
+		// only name
+		public Student(String name) {
+			this.name = name;
+		}
+		// only name and age
+		public Student(String name, int age) {
+			this.name = name;
+			this.age = age;
+		}
+		// all info: name age and address
+		public Student(String name, int age, String address) {
+			this.name = name;
+			this.age = age;
+			this.address = address;
+		}
 
 #### constructor chaining
 
