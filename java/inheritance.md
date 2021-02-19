@@ -90,6 +90,28 @@
               protected, default and private(obivious) will not be accessed. 
 
 
+            class Animal {
+                  public String name;
+                  protected String color;
+                  int age;
+                  private double weight;
+            }
+            class Dog extends Animal {
+
+            }
+            public class HelloWorld {
+                  public static void main(String[] args) {
+                        Dog d = new Dog();
+                        System.out.println(d.name); // inherited irrespective of to which package child class belongs
+                        System.out.println(d.color); // protected , inherited to subclass outside the package too
+                        System.out.println(d.age); // default, inherited to same package
+                        //System.out.println(d.weight); // private not accessible
+                  }
+            }
+
+
+
+
 #### constructors with inheritance
 
             not inherited as each class have their own constructors
