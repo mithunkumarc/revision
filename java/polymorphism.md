@@ -21,13 +21,14 @@ Without inheritance there is no polymorphism.
       parameters must be different or their order of appearance must be different
       return type is optional, can be different or same
       
-      public void eat(int i, String name) {
-      }
-      protected static void eat(String name, int i) {
-      }
-      static int eat(int i, String name, boolean b) {
-        return 0;
-      }
+
+          public void eat(int i, String name) {
+          }
+          protected static void eat(String name, int i) {
+          }
+          static int eat(int i, String name, boolean b) {
+            return 0;
+          }
 
 2. overriding methods : dynamic polymorphism
 
@@ -35,14 +36,37 @@ Without inheritance there is no polymorphism.
       subclass has oppertunity to use inherited or change the implementation.
       when subclass change the implementation method becomes overridden.
       
-      rules
-      
-      
+#### overriding rules
+        
+1. method signature must be same
+2. access modifiers must not be more restrictive than parent method
+  
+      class Animal {
+        public void eat() {
+          System.out.println("animal eat");
+        }
+      }
+      class Dog extends Animal {
+        // error, parent method is public, all rest are restrictive
+        void eat() {
+          System.out.println("dog eat");
+        }
+      }
 
+      if parent method is protected, subclass method can be protected and public
+      if parent method is default, subclass method can be protected, default and public
 
-parent p = new Child();
-p.name //parent name
-p.callMethod(); // child overridden method if available else inherited
+      private > default > protected > public
+
+3. final methods cannot be overidden
+4. should be having same argument list   
+5. same return type of subtype(covariant)
+
+#### polymorphic
+
+        parent p = new Child();
+        p.name //parent name
+        p.callMethod(); // child overridden method if available else inherited
 
 
 #### parent class ref var pointing to subclass object  (stuck to same hierarcy)
