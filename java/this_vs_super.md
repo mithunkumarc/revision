@@ -75,7 +75,27 @@
 #### super
 
 
-1. call parent constructor
+1. call parent constructor :super(..args) will  call matching parent class constructor
+
+            class Animal {
+                  public Animal() {
+                        System.out.println("animal constructor");
+                  }
+            }
+
+            class Dog extends Animal {
+                  //default constructor will be added by compiler
+                  //default constructor call parent class constructor by default
+                  //to call parent class constructor, super keyword is used
+                  //super() will be used at the first line insdie constrcutor
+                  //super() will call parent class constructor
+            }
+            public class HelloWorld {
+                  public static void main(String[] args) {
+                        Dog d = new Dog();
+                  }
+            }
+
 2. prent class refvar
 3. parent class method
-4. 
+5. 
