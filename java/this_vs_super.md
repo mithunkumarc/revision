@@ -95,7 +95,29 @@
                         Dog d = new Dog();
                   }
             }
+            
+another example : 
+      
+            class Animal {
+                  String name;
+                  public Animal(String name) {
+                        this.name = name;
+                  }
+            }
 
-2. prent class refvar
+            class Dog extends Animal {
+                  public Dog(String name) {
+                        super(name); // passing to parent for initialization and inherit the same value
+                  }
+            }
+            public class HelloWorld {
+                  public static void main(String[] args) {
+                        Dog d = new Dog("tommy");
+                        System.out.println(d.name); // tommy
+                  }
+            }
+
+2. parent class refvar
+
 3. parent class method
-5. 
+ 
