@@ -59,8 +59,34 @@ Without inheritance there is no polymorphism.
       private > default > protected > public
 
 3. final methods cannot be overidden
-4. should be having same argument list   
-5. same return type of subtype(covariant)
+4. should be having same parameter/argument list   
+
+        class Animal {
+          public void eat(String name, int age) {
+            System.out.println("animal");
+          }
+        }
+        class Dog extends Animal {
+          public void eat(String name, int age) {
+            System.out.println("eat");
+          }
+        }
+
+5. method must be having same return type or subtype(covariant)
+6. A static method in a subclass may hide another static one in a superclass, and that’s called hiding.
+
+          class Animal {
+            static void eat() {
+              System.out.println("animal");
+            }
+          }
+          class Dog extends Animal {
+            // this is not overriding, this is hiding
+            // replacing inherited with new one
+            static void eat() {
+              System.out.println("eat");
+            }
+          }
 
 #### polymorphic
 
