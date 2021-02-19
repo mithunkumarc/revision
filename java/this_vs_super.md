@@ -117,7 +117,34 @@ another example :
                   }
             }
 
-2. parent class refvar
+2. parent class state/attributes(access modifier rules applied)
+
+
+            class Animal {
+                  String name;
+                  String color;
+                  public Animal(String name, String color) {
+                        this.name = name;
+                        this.color = color;
+                  }
+            }
+
+            class Dog extends Animal {
+                  public Dog(String name, String color) {
+                        super(name,color);
+                  }
+                  public void getInfo() {
+                        // access parent class variables
+                        System.out.println("dog name : "+ super.name);
+                        System.out.println("dog color : "+ super.color);
+                  }
+            }
+            public class HelloWorld {
+                  public static void main(String[] args) {
+                        Dog d = new Dog("tommy", "black and white");
+                        d.getInfo();
+                  }
+            }
 
 3. parent class method
  
