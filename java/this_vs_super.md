@@ -117,7 +117,7 @@ another example :
                   }
             }
 
-2. parent class state/attributes(access modifier rules applied)
+2. access parent class state/attributes(access modifier rules applied)
 
 
             class Animal {
@@ -146,5 +146,22 @@ another example :
                   }
             }
 
-3. parent class method
- 
+3. calling parent class method
+
+            class Animal {
+                  public void eat() {
+                        System.out.println("animal eat method");
+                  }
+            }
+            class Dog extends Animal {
+                  public void eat() {
+                        super.eat(); // calling parent class method
+                  }
+            }
+            public class HelloWorld {
+                  public static void main(String[] args) {
+                        Dog d = new Dog();
+                        d.eat();
+                  }
+            }
+
