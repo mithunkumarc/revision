@@ -40,18 +40,18 @@ Without inheritance there is no polymorphism.
         
 1. method signature must be same
 2. access modifiers must not be more restrictive than parent method
-  
-      class Animal {
-        public void eat() {
-          System.out.println("animal eat");
+
+        class Animal {
+          public void eat() {
+            System.out.println("animal eat");
+          }
         }
-      }
-      class Dog extends Animal {
-        // error, parent method is public, all rest are restrictive
-        void eat() {
-          System.out.println("dog eat");
+        class Dog extends Animal {
+          // error, parent method is public, all rest are restrictive
+          void eat() {
+            System.out.println("dog eat");
+          }
         }
-      }
 
       if parent method is protected, subclass method can be protected and public
       if parent method is default, subclass method can be protected, default and public
