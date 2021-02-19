@@ -111,17 +111,62 @@ Without inheritance there is no polymorphism.
             }
           }
 
-#### polymorphic
+7. synchronous keyword has no effect on overriding 
 
-        parent p = new Child();
-        p.name //parent name
-        p.callMethod(); // child overridden method if available else inherited
 
+#### parent class referenct to child class
+
+        Animal a = new Dog();
+        System.out.println(a.name); // prints animal name as referent type belong to animal
+        a.eat(); // calls dogs eat method, if overrided else parent animal eat method is called
 
 #### parent class ref var pointing to subclass object  (stuck to same hierarcy)
 
+
+        Animal a = new Dog();
+        
+        limitation : a points to only instances which subclass animal;
+
+
 #### interface ref var pointing to implemented class object  (can be implemented on any hierarcy which supports behaviour)
 
-staic poly morphism , dynamic  
+        interface Flyable{
+          public void fly();
+        }
 
-static biding  
+        class Bird implments Flyable {
+          // provide fly method implemenation
+        }
+        
+        class Helicoptor implements Flyable {
+          // provide fly method impl.
+        }
+        
+        Flyable f =  new Bird();
+        f = new Helicopter();
+        
+        advantage: f can point to any instances which implments Flyable interface
+        
+        
+#### static polymorphism(static biding) , dynamic polymorphism(dynamic binding) 
+
+        static polymorphism : method call resolved at compile time (overloading mehtods)
+
+            //animal class
+            public void eat(String food) {
+            }
+            Animal a = new Animal();
+            a.eat("carrot");
+        
+        Dynamic polymorphism : method call resoved at runtime (example overriding)
+
+            public void eat(Animal a) {
+              a.eat(); // runtime , depends on which object is sent
+            }
+
+        
+        Static polymorphism is a type of polymorphism that collects the information to call a method during compile time 
+        while dynamic polymorphism is a type of polymorphism that collects information to call a method at run time. 
+        Thus, this is the main difference between static and dynamic polymorphism.
+
+
