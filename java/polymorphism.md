@@ -32,10 +32,10 @@ Without inheritance there is no polymorphism.
 
 2. overriding methods : dynamic polymorphism
 
-      when subclass inherits the method from parent class.
-      subclass has oppertunity to use inherited or change the implementation.
-      when subclass change the implementation method becomes overridden.
-      
+          when subclass inherits the method from parent class.
+          subclass has oppertunity to use inherited or change the implementation.
+          when subclass change the implementation method becomes overridden.
+
 #### overriding rules
         
 1. method signature must be same
@@ -59,7 +59,10 @@ Without inheritance there is no polymorphism.
       private > default > protected > public
 
 3. final methods cannot be overidden
-4. should be having same parameter/argument list   
+
+          final method can be inherited but cannot be overridded
+      
+5. should be having same parameter/argument list   
 
         class Animal {
           public void eat(String name, int age) {
@@ -73,6 +76,26 @@ Without inheritance there is no polymorphism.
         }
 
 5. method must be having same return type or subtype(covariant)
+
+
+            class Animal {
+            }
+            class Dog extends Animal {
+            }
+
+            class Zoo {
+              public Animal getAnimal() {
+                return new Animal();
+              }
+            }
+            class MiniZoo {
+              public Dog getAnimal() {
+                return new Dog();
+              }
+            }
+
+
+
 6. A static method in a subclass may hide another static one in a superclass, and that’s called hiding.
 
           class Animal {
