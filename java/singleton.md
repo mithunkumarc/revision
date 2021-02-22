@@ -1,2 +1,4 @@
 
 #### what is early initialization and lazy initialization
+
+https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples
