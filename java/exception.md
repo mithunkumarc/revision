@@ -89,6 +89,34 @@ The Java programming language uses exceptions to handle errors and other excepti
 
 #### userDefinedException
 
+
+#### throws : warning to caller to handle exception
+#### throw
+
+#### method which throw runtime exception may not need throws declaration
+         
+                // runtime exception example
+                class UserNotFoundException extends RuntimeException {
+                        private String message;
+                        public UserNotFoundException(String message) {
+                                this.message = message;
+                        }
+                        @Override
+                        public String getMessage() {
+                                return this.message;
+                        }
+                }
+
+                // inside some class which uses runtime exception
+                public void checkUser() throws UserNotFoundException { //throws not at all required
+                        //check for user
+                        throw new UserNotFoundException("user not found");
+                }
+
+#### user defined runtime exception
+#### user devined compile time exception
+
+
 #### impact of method throws exception with overriding
 
 #### return inside try catch finally
