@@ -91,7 +91,16 @@ The Java programming language uses exceptions to handle errors and other excepti
 
 
 #### throws : warning to caller to handle exception
+
+        used on method declaration
+        mandatory for compile time exception, optional for runtime exception so is try catch in this case
+        
+
+
 #### throw
+
+        creating instance of exception inside method
+
 
 #### method which throw runtime exception may not need throws declaration(so no to need try catch)
          
@@ -142,9 +151,41 @@ The Java programming language uses exceptions to handle errors and other excepti
 
 #### user defined compile time exception
 
+                // extends Exception
+                // getMessage()
+                // designer makes throws declartion on method
+                // throw exception if something goes wrong
+                // user will hanlde using try and catch
+                class UserNotFoundException extends Exception {
+                        private String message;
+                        public UserNotFoundException(String message) {
+                                this.message = message;
+                        }
+                        @Override
+                        public String getMessage() {
+                                return this.message;
+                        }
+                }
+
+                public class TestException {
+                        public static void main(String[] args) {
+                                TestException te = new TestException();
+                                try{
+                                        te.checkUser();
+                                } catch(UserNotFoundException u) {
+                                        System.out.println(u.getMessage());
+                                }
+                        }
+                        public void checkUser() throws UserNotFoundException{
+                                //check for user
+                                throw new UserNotFoundException("user not found");
+                        }
+                }
 
 
 
 #### impact of method throws exception with overriding
+
+
 
 #### return inside try catch finally
