@@ -186,6 +186,34 @@ The Java programming language uses exceptions to handle errors and other excepti
 
 #### impact of method throws exception with overriding
 
+##### If the superclass method does not declare an exception
 
+        subclass overridden method cannot declare the checked exception but 
+        it can declare unchecked/runtime exception.
+        
+
+        class Animal {
+                // no exception declared here
+                public void eat() {
+
+                }
+        }
+
+        class Dog extends Animal {
+                // error : cannot declare checked/compile time exception, runtime excetion allowed
+                public void eat() throws Exception {
+
+                }
+        }
+
+        
+##### If the superclass method declares an exception
+
+        1. subclass overridden method can declare same exception or skip declaring it.
+        2. sublcass overriden method can declare subclass exception or but cannot declare parent exception.
 
 #### return inside try catch finally
+
+        try, catch , finally and throw throws keywords are used to handle exception
+        
+        
