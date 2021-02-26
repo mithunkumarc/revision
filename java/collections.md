@@ -122,19 +122,70 @@
         ConcurrentSkipListSet is thread safe, TreeSet is not thread safe.
         
         
-#### sortedset vs navigable set
+#### sortedset vs navigable set (interfaces)
 
       The Java NavigableSet interface, java.util.NavigableSet, is a subtype of the Java SortedSet interface. 
       Therefore the NavigableSet behaves like a SortedSet, 
       but with an additional set of navigation methods available in addition to the sorting mechanisms of the SortedSet
 
-
+      // navigable set methods
       headSet : returns all elements which are less than passed element, headSet(5); returns all elements < 5
       tailSet : returns all elements which are higher than passed element, tailset(5) ; returns > 5
       higher : retuns element which is greater than or equal to passed element : eg higher(5); returns >= 5
       lower : retuns element which is less than or equal to passed element : eg lower(5); returns <= 5
       pollFirst : remove first element
       pollLast : remove last element
+
+
+#### BlockingQueue : interface
+  
+        block accessing thread if queue is full and thread try to add new one
+        bock accessing thread if queue is empty and thread try to read
+
+        A blocking queue indicates that the queue blocks the accessing thread if it is full 
+        (when the queue is bounded : initial size is mentioned) 
+        or becomes empty. If the queue is full, then adding a new element will block the accessing thread 
+        unless there is space available for the new element. 
+        Similarly, if the queue is empty, then accessing an element blocks the calling thread:
+
+
+####  ConcurrentLinkedQueue 
+
+        It is an unbounded, thread-safe, and non-blocking queue.
+        
+        Unlike a LinkedBlockingQueue, a ConcurrentLinkedQueue is a non-blocking queue. 
+        Thus, it does not block a thread once the queue is empty. Instead, it returns null. 
+        Since its unbounded, it'll throw a java.lang.OutOfMemoryError if there's no extra memory to add new elements.
+
+#### BlockingQueue vs ConcurrenLinkedQueue
+
+        Both implements the Queue Interface
+        They both use linked nodes to store their elements
+        Both are suitable for concurrent access scenarios
+
+        while accessing BlockingQueue has compiletime exceptions
+        but ConcurrentLinkedQueue gives 
+          null: when thread try to read empty list
+          OutOfMemoryError: when thread try to add new element whent queue is full
+
+
+#### concurrent exception : 
+
+        when reading/iterating arraylist for examaple, you cannot modify , if you try to modify you get this exception
+        for this use collection from java.util.concurrent
+
+
+
+#### thread safe list : java.util.concurrent.CopyOnWriteArrayList<E>
+  
+        A thread-safe variant of ArrayList in which all mutative operations (add, set, and so on) are implemented 
+        by making a fresh copy of the underlying array.
+
+#### thread safe set : java.util.concurrent.CopyOnWriteArraySet<E>
+
+        
+#### thread safe map : java.util.concurrent.ConcurrentHashMap
+
 
 
 #### tobe covered
