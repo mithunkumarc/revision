@@ -93,7 +93,7 @@ The Java programming language uses exceptions to handle errors and other excepti
 #### throws : warning to caller to handle exception
 #### throw
 
-#### method which throw runtime exception may not need throws declaration
+#### method which throw runtime exception may not need throws declaration(so no to need try catch)
          
                 // runtime exception example
                 class UserNotFoundException extends RuntimeException {
@@ -113,8 +113,36 @@ The Java programming language uses exceptions to handle errors and other excepti
                         throw new UserNotFoundException("user not found");
                 }
 
-#### user defined runtime exception
-#### user devined compile time exception
+#### user defined runtime exception : no need throws keyword as it is runtime exception
+
+                // do we need runtime exception?????
+                class UserNotFoundException extends RuntimeException {
+                        private String message;
+                        public UserNotFoundException(String message) {
+                                this.message = message;
+                        }
+                        @Override
+                        public String getMessage() {
+                                return this.message;
+                        }
+                }
+
+                public class TestException {
+                        public static void main(String[] args) {
+                                TestException te = new TestException();
+                                te.checkUser();
+                        }
+                        public void checkUser() {
+                                //check for user
+                                throw new UserNotFoundException("user not found");
+                        }
+                }
+
+
+
+#### user defined compile time exception
+
+
 
 
 #### impact of method throws exception with overriding
