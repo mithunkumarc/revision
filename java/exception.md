@@ -216,4 +216,47 @@ The Java programming language uses exceptions to handle errors and other excepti
 
         try, catch , finally and throw throws keywords are used to handle exception
         
+        // always finally block wins, even after providing return statements in try and catch
+        try {
+                //return 1; // finally block wins
+                throw new Exception(); // finally block wins
+        }
+        catch(Exception e) {
+                return 2; // finally block wins
+        }
+        finally {
+                return 3;
+        }
         
+        
+#### order of exception
+
+        best practice : specific functions must be handled first , at the end handle generic exception.
+        Generic Exception must be handled at last.
+
+#### try catch finally rules
+
+        only one try block allowed at a time.
+        nested try-catch-finally allowed inside try block.
+        multiple catch block allowed after try block.
+        try must be follwed by either catch or finally.
+        you can skip catch block but it is not a best practice.
+        always log message in catch block.
+        only one finally block is allowed.
+        try-catch-finally allowed in finally block.
+
+#### java 7 syntax of handling multiple catch block
+
+		boolean flag = true;
+		try {
+			if(flag) {
+				throw new SQLException();
+			} else {
+				throw new IOException();
+			}
+		} catch(SQLException | IOException e) {
+		    //logger.log(e);
+
+		} catch(Exception e) {
+		    //logger.severe(e);
+		}	
