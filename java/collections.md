@@ -114,6 +114,29 @@
         LinkedHashSet : Order is important. 
         TreeSet : sorted order
 
+
+#### ConcurrentSkipListSet vs treeset
+
+        both implements Sorted Set interface
+        Both are sorted by natural order or according to the comparator provided.
+        ConcurrentSkipListSet is thread safe, TreeSet is not thread safe.
+        
+        
+#### sortedset vs navigable set
+
+      The Java NavigableSet interface, java.util.NavigableSet, is a subtype of the Java SortedSet interface. 
+      Therefore the NavigableSet behaves like a SortedSet, 
+      but with an additional set of navigation methods available in addition to the sorting mechanisms of the SortedSet
+
+
+      headSet : returns all elements which are less than passed element, headSet(5); returns all elements < 5
+      tailSet : returns all elements which are higher than passed element, tailset(5) ; returns > 5
+      higher : retuns element which is greater than or equal to passed element : eg higher(5); returns >= 5
+      lower : retuns element which is less than or equal to passed element : eg lower(5); returns <= 5
+      pollFirst : remove first element
+      pollLast : remove last element
+
+
 #### tobe covered
 
             wrapper class
