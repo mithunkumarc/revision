@@ -79,7 +79,8 @@ output :
         running in separate thread : Thread-0
 
 
-#### Implement the Runnable interface.
+#### Implement the Runnable interface: recommended way of creating thread in Java
+
 
 1. create a class which implements runnable
 2. runnable interface has method call run, implement in your class
@@ -108,7 +109,5 @@ output :
 
 
 
-
-#### recommended way of creating thread in Java
 
 
