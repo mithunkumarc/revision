@@ -65,7 +65,7 @@
 
         public class HelloWorld {
           public static void main(String[] args) {
-            System.out.println("Before creating user thread, which thread is running? : "+ Thread.currentThread().getName());
+            System.out.println("Before creating user thread : "+ Thread.currentThread().getName());
             MyThread mt = new MyThread();
             mt.start();		
             System.out.println("End of Main thread"); // main thread will not stop till all new thread to complete
@@ -99,7 +99,7 @@ output :
 
         public class HelloWorld {
           public static void main(String[] args) {
-            System.out.println("Before creating user thread, which thread is running? : "+ Thread.currentThread().getName());
+            System.out.println("Before creating user thread : "+ Thread.currentThread().getName());
             MyRunnable myRunnable = new MyRunnable();
             Thread t = new Thread(myRunnable);
             t.start();
@@ -110,33 +110,33 @@ output :
 
 #### Running thread as Anonymous class
 
-        public class HelloWorld {
-          public static void main(String[] args) {
-            System.out.println("Before creating user thread, which thread is running? : "+ Thread.currentThread().getName());
-            Thread t = new Thread(new Runnable() {			
-              @Override
-              public void run() {
-                System.out.println("running in separate thread : "+ Thread.currentThread().getName());				
-              }
-            });
-            t.start();
-            System.out.println("End of main thread");
-          }
+      public class HelloWorld {
+        public static void main(String[] args) {
+          System.out.println("Before creating user thread : "+ Thread.currentThread().getName());
+          Thread t = new Thread(new Runnable() {			
+            @Override
+            public void run() {
+              System.out.println("running in separate thread : "+ Thread.currentThread().getName());				
+            }
+          });
+          t.start();
+          System.out.println("End of main thread");
         }
+      }
 
 
 #### Running thread as lambda expression: replacing Anonymous class
 
 
-        // Runnable as functional interface
-        public class HelloWorld {
-          public static void main(String[] args) {
-            System.out.println("Before creating user thread, which thread is running? : "+ Thread.currentThread().getName());
-            Thread t = new Thread(() -> 
-                System.out.println("running in separate thread : "+ Thread.currentThread().getName())					
-            );
-            t.start();
-            System.out.println("End of main thread");
-          }
+      // Runnable as functional interface
+      public class HelloWorld {
+        public static void main(String[] args) {
+          System.out.println("Before creating user thread : "+ Thread.currentThread().getName());
+          Thread t = new Thread(() -> 
+              System.out.println("running in separate thread : "+ Thread.currentThread().getName())					
+          );
+          t.start();
+          System.out.println("End of main thread");
         }
+      }
 
