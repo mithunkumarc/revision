@@ -108,6 +108,35 @@ output :
         }
 
 
+#### Running thread as Anonymous class
+
+        public class HelloWorld {
+          public static void main(String[] args) {
+            System.out.println("Before creating user thread, which thread is running? : "+ Thread.currentThread().getName());
+            Thread t = new Thread(new Runnable() {			
+              @Override
+              public void run() {
+                System.out.println("running in separate thread : "+ Thread.currentThread().getName());				
+              }
+            });
+            t.start();
+            System.out.println("End of main thread");
+          }
+        }
 
 
+#### Running thread as lambda expression: replacing Anonymous class
+
+
+        // Runnable as functional interface
+        public class HelloWorld {
+          public static void main(String[] args) {
+            System.out.println("Before creating user thread, which thread is running? : "+ Thread.currentThread().getName());
+            Thread t = new Thread(() -> 
+                System.out.println("running in separate thread : "+ Thread.currentThread().getName())					
+            );
+            t.start();
+            System.out.println("End of main thread");
+          }
+        }
 
