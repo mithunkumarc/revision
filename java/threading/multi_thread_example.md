@@ -28,7 +28,7 @@
         }
 
 
-#### inject delay in multithreading
+#### inject delay in multithreading using Thread.sleep(milliseconds)
 
         class BankTransaction implements Runnable {
           @Override
