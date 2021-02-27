@@ -36,8 +36,10 @@
 
 #### Thread Scheduler
 
-        Thread scheduler is the part of Operating System implementation and when a Thread is started, 
-        it’s execution is controlled by Thread Scheduler and JVM doesn’t have any control on it’s execution.
+        The thread scheduler is the part of the JVM (although most JVMs map Java
+        threads directly to native threads on the underlying OS) that decides which
+        thread should run at any given moment and also takes threads out of the run
+        state
 
         eg : picking which thread to be executed
 
