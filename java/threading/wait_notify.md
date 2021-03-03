@@ -62,3 +62,12 @@
             t2.start();
           }
         }
+
+            /*
+                output :
+                1000: rupees not sufficient, waiting for balance.
+                600 rupees creadited to account.
+                amount 600 rupees deposited.
+                remaining balance : 100
+
+            */
